@@ -165,6 +165,12 @@ function determineWinnings()
         else if (sevens == 3) {
             winnings = playerBet * 100;
         }
+        else if (bells == 2) {
+            winnings = playerBet * 10;
+        }
+        else if (sevens == 1) {
+            winnings = playerBet * 5;
+        }
         else if (grapes == 2) {
             winnings = playerBet * 2;
         }
@@ -180,14 +186,8 @@ function determineWinnings()
         else if (bars == 2) {
             winnings = playerBet * 5;
         }
-        else if (bells == 2) {
-            winnings = playerBet * 10;
-        }
         else if (sevens == 2) {
             winnings = playerBet * 20;
-        }
-        else if (sevens == 1) {
-            winnings = playerBet * 5;
         }
         else {
             winnings = playerBet * 1;
